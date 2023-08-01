@@ -1,0 +1,46 @@
+body {
+  background-color: black;
+  color: green;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+p {
+  font-size: 24px;
+}
+p {
+  color: green;
+  margin-bottom: 20px;
+}
+.green-text {
+  color: green;
+}
+
+.blue-text {
+  color: blue;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.small-text {
+  color: red;
+  font-size: 12px;
+}
