@@ -1,46 +1,36 @@
+/* styles.css */
+
 body {
   background-color: black;
-  color: green;
-  font-family: Arial, sans-serif;
 }
 
+/* Estilos para el encabezado (header) */
 .header {
-  background-color: white;
+  background-color: #333;
+  color: #fff;
   text-align: center;
-  padding: 20px;
-  margin-bottom: 20px;
+  padding: 1rem;
 }
 
-h1 {
-  font-size: 48px;
-  margin: 0;
-}
-
-h2 {
-  font-size: 32px;
-}
-
-p {
-  font-size: 24px;
-}
-p {
-  color: green;
-  margin-bottom: 20px;
-}
+/* Estilos para el texto verde */
 .green-text {
   color: green;
 }
 
+/* Estilos para el texto azul */
 .blue-text {
   color: blue;
 }
 
+/* Estilos para el pie de página (footer) */
 .footer {
+  background-color: #333;
+  color: #fff;
   text-align: center;
-  margin-top: 20px;
+  padding: 1rem;
 }
 
+/* Estilos para el texto pequeño (small-text) */
 .small-text {
-  color: red;
   font-size: 12px;
 }
