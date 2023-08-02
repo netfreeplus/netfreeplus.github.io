@@ -1,14 +1,14 @@
 /* styles.css */
 
 body {
-  background-color: white;
+  background-color: black;
+  text-align: center; /* Centrar todo el texto */
 }
 
 /* Estilos para el encabezado (header) */
 .header {
   background-color: #333;
   color: #fff;
-  text-align: center;
   padding: 1rem;
 }
 
@@ -26,7 +26,6 @@ body {
 .footer {
   background-color: #333;
   color: #fff;
-  text-align: center;
   padding: 1rem;
 }
 
