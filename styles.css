@@ -3,6 +3,7 @@
 body {
   background-color: black;
   text-align: center; /* Centrar todo el texto */
+  overflow: hidden; /* Evitar que las estrellas se muestren fuera del área visible */
 }
 
 /* Estilos para el encabezado (header) */
@@ -32,4 +33,31 @@ body {
 /* Estilos para el texto pequeño (small-text) */
 .small-text {
   font-size: 12px;
+}
+
+/* Estilos para las estrellas */
+.star-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Evitar que las estrellas interfieran con otros elementos */
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background-color: #fff;
+  animation: twinkle 1s infinite;
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0; /* La estrella no es visible al inicio y al final de la animación */
+  }
+  50% {
+    opacity: 1; /* La estrella es completamente visible en el punto medio de la animación */
+  }
 }
