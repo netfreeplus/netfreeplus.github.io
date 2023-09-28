@@ -1,35 +1,26 @@
-/* styles.css */
-
-body {
-  background-color: black;
-  text-align: center; /* Centrar todo el texto */
+/* Estilos generales para la página */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-/* Estilos para el encabezado (header) */
-.header {
-  background-color: #333;
-  color: #fff;
-  padding: 1rem;
+/* Estilos para el contenedor de bienvenida */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #f0f0f0; /* Cambia el color de fondo si lo deseas */
 }
 
-/* Estilos para el texto verde */
-.green-text {
-  color: green;
+/* Estilos para el texto de bienvenida */
+h1 {
+    font-size: 3em; /* Tamaño grande del encabezado */
+    margin-bottom: 10px; /* Espacio entre el encabezado y el párrafo */
 }
 
-/* Estilos para el texto azul */
-.blue-text {
-  color: blue;
-}
-
-/* Estilos para el pie de página (footer) */
-.footer {
-  background-color: #333;
-  color: #fff;
-  padding: 1rem;
-}
-
-/* Estilos para el texto pequeño (small-text) */
-.small-text {
-  font-size: 12px;
+p {
+    font-size: 2em; /* Tamaño grande del párrafo */
 }
