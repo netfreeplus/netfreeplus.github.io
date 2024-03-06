@@ -67,37 +67,6 @@
             }
         }
 
-        /* Estilos para el fondo Matrix */
-        body {
-            background-color: black; /* Color de fondo negro */
-            overflow: hidden; /* Oculta el desbordamiento horizontal */
-        }
-
-        .matrix-bg {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none; /* No interfiere con los eventos del mouse */
-            z-index: -1; /* Detrás de otros elementos */
-            background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.4) 100%); /* Fondo con degradado transparente */
-            animation: matrixRain 0.3s linear infinite; /* Animación de lluvia de caracteres */
-        }
-
-        @keyframes matrixRain {
-            0% {
-                transform: translateY(-100%);
-            }
-            100% {
-                transform: translateY(100%);
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="matrix-bg"></div> <!-- Fondo Matrix -->
-
     <div class="container">
         <h1>Bienvenidos</h1>
         <p>Disfruten sus futuras compras</p>
