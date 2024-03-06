@@ -30,16 +30,16 @@
             -webkit-background-clip: text; /* Clip de texto para aplicar el gradiente de color */
             color: transparent; /* Color de texto transparente */
             text-align: center; /* Centrar el texto horizontalmente */
-            animation: moveGradient 10s infinite alternate; /* Animación del gradiente de color */
+            animation: changeColor 10s infinite alternate; /* Animación para cambiar de color */
         }
 
         /* Definición de la animación */
-        @keyframes moveGradient {
+        @keyframes changeColor {
             0% {
-                background-position: 0% 50%;
+                filter: hue-rotate(0deg); /* Rotación de tono inicial */
             }
             100% {
-                background-position: 100% 50%;
+                filter: hue-rotate(360deg); /* Rotación de tono completa */
             }
         }
     </style>
