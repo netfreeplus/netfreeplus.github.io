@@ -5,6 +5,11 @@ html, body {
     padding: 0;
 }
 
+.icono-netflix {
+    width: 50px; /* Puedes ajustar el tamaño según tus necesidades */
+    height: auto; /* Esto mantiene la proporción original de la imagen */
+}
+
 /* Estilos para el contenedor de bienvenida */
 .container {
     display: flex;
