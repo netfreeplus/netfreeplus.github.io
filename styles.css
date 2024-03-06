@@ -2,6 +2,7 @@
 .container {
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 100px; /* Margen inferior para permitir el desplazamiento */
 }
 
 /* Estilo para los textos en verde */
@@ -34,22 +35,6 @@
 }
 
 .icono-grande {
-    width: 70px;
-    height: auto;
-}
-
-/* Estilos para los iconos */
-.icono-netflix,
-.icono-disney,
-.icono-star,
-.icono-amazonprime,
-.icono-youtube,
-.icono-anime,
-.icono-hbomax,
-.icono-clarov,
-.icono-plex,
-/* Añade estilos para los otros iconos aquí */
-{
     width: 70px;
     height: auto;
 }
