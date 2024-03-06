@@ -2,22 +2,18 @@
 .container {
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 100px; /* Margen inferior para permitir el desplazamiento */
 }
 
-/* Estilo para el texto en blanco */
-.texto-blanco {
-    color: white;
-}
-
-/* Estilo para el texto en verde */
-.texto-verde {
+/* Estilo para los textos en verde */
+.green-text {
     color: green;
+    font-size: 16px;
 }
 
-/* Estilo para el texto en azul */
-.texto-azul {
+/* Estilo para los textos en azul */
+.blue-text {
     color: blue;
+    font-size: 16px;
 }
 
 /* Estilos para el pie de página */
@@ -42,25 +38,62 @@
     height: auto;
 }
 
-/* Estilo para el fondo animado */
-body {
-    background-color: black; /* Color de fondo negro */
-    overflow: scroll; /* Ocultar desplazamiento */
+/* Estilos para el icono de Netflix */
+.icono-netflix {
+    width: 50px;
+    height: auto;
 }
 
-.matrix-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: -1;
+/* Estilos para el icono de Disney Plus */
+.icono-disney {
+    width: 70px;
+    height: auto;
 }
 
-.matrix {
-    position: absolute;
-    font-family: "Courier New", Courier, monospace;
-    color: #0f0; /* Color verde */
-    pointer-events: none;
+/* Estilos para el icono de Star+ */
+.icono-star {
+    width: 50px;
+    height: auto;
+}
+
+/* Estilos para el icono de Amazon Prime Video */
+.icono-amazonprime {
+    width: 70px;
+    height: auto;
+}
+
+/* Estilos para el icono de Spotify */
+.icono-spot {
+    width: 70px;
+    height: auto;
+}
+
+/* Estilos para el icono de YouTube Premium */
+.icono-youtube {
+    width: 70px;
+    height: auto;
+}
+
+/* Estilos para el icono de Crunchyroll */
+.icono-anime {
+    width: 70px;
+    height: auto;
+}
+
+/* Estilos para el icono de HBO Max */
+.icono-hbomax {
+    width: 70px;
+    height: auto;
+}
+
+/* Estilos para el icono de Claro Video */
+.icono-clarov {
+    width: 70px;
+    height: auto;
+}
+
+/* Estilos para el icono de Plex */
+.icono-plex {
+    width: 70px;
+    height: auto;
 }
