@@ -47,7 +47,7 @@
 /* Estilos para el título "Bienvenidos" */
 h1 {
     margin: 20px 0; /* Margen superior e inferior de 20 píxeles, sin margen a los lados */
-    font-size: 5em; /* Tamaño de fuente 5 veces el tamaño normal */
+    font-size: 3em; /* Tamaño de fuente 3 veces el tamaño normal */
     background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); /* Gradiente de color multicolor */
     -webkit-background-clip: text; /* Clip de texto para aplicar el gradiente de color */
     color: transparent; /* Color de texto transparente */
