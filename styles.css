@@ -63,7 +63,7 @@ h1 {
 /* Estilos para el fondo Matrix */
 body {
     background-color: black; /* Color de fondo negro */
-    overflow: hidden; /* Oculta el desbordamiento horizontal */
+    overflow-x: hidden; /* Oculta el desplazamiento horizontal */
 }
 
 .matrix-bg {
