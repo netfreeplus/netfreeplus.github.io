@@ -42,34 +42,25 @@
     height: auto;
 }
 
-/* Estilos para el título "Bienvenidos" */
-h1 {
-    margin: 20px 0; /* Margen superior e inferior de 20 píxeles, sin margen a los lados */
-    font-size: 5em; /* Tamaño de fuente 5 veces el tamaño normal */
-    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); /* Gradiente de color multicolor */
-    -webkit-background-clip: text; /* Clip de texto para aplicar el gradiente de color */
-    color: transparent; /* Color de texto transparente */
-    text-align: center; /* Centrar el texto horizontalmente */
-    animation: changeColor 10s infinite alternate; /* Animación para cambiar de color */
-}
-
-/* Definición de la animación */
-@keyframes changeColor {
-    0% {
-        filter: hue-rotate(0deg); /* Rotación de tono inicial */
-    }
-    100% {
-        filter: hue-rotate(360deg); /* Rotación de tono completa */
-    }
-}
-
 /* Estilo para el fondo animado */
 body {
     background-color: black; /* Color de fondo negro */
-    background-image: url('https://media.giphy.com/media/6uGhT1O4sxpi8/giphy.gif'); /* Imagen de fondo animada */
-    background-size: cover; /* Ajustar tamaño de la imagen de fondo */
-    background-position: center; /* Posición centrada de la imagen de fondo */
-    background-repeat: no-repeat; /* No repetir la imagen de fondo */
-    overflow-x: hidden; /* Ocultar desplazamiento horizontal */
-    color: white; /* Color de texto blanco */
+    overflow: hidden; /* Ocultar desplazamiento */
+}
+
+.matrix-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.matrix {
+    position: absolute;
+    font-family: "Courier New", Courier, monospace;
+    color: #0f0; /* Color verde */
+    pointer-events: none;
 }
