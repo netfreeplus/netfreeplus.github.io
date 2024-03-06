@@ -1,26 +1,39 @@
-/* Estilos generales para la página */
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-/* Estilos para el contenedor de bienvenida */
+/* Estilos para el contenedor principal */
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    background-color: #f0f0f0; /* Cambia el color de fondo si lo deseas */
+    text-align: center;
+    margin-top: 20px;
 }
 
-/* Estilos para el texto de bienvenida */
-h1 {
-    font-size: 3em; /* Tamaño grande del encabezado */
-    margin-bottom: 10px; /* Espacio entre el encabezado y el párrafo */
+/* Estilo para los textos en verde */
+.green-text {
+    color: green;
+    font-size: 16px;
 }
 
-p {
-    font-size: 2em; /* Tamaño grande del párrafo */
+/* Estilo para los textos en azul */
+.blue-text {
+    color: blue;
+    font-size: 16px;
+}
+
+/* Estilos para el pie de página */
+.footer {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Estilos para los iconos */
+.icono-netflix,
+.icono-disney,
+.icono-star,
+.icono-amazonprime,
+.icono-youtube,
+.icono-anime,
+.icono-hbomax,
+.icono-clarov,
+.icono-plex,
+/* Añade estilos para los otros iconos aquí */
+{
+    width: 70px;
+    height: auto;
 }
