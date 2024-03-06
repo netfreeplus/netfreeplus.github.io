@@ -6,23 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <style>
-/* Estilos para los iconos */
-.icono-pequeno {
-    width: 30px;
-    height: auto;
-}
+/* Estilos para el contenedor principal */
+        .container {
+            text-align: center;
+            margin-top: 20px;
+        }
 
-.icono-mediano {
-    width: 50px;
-    height: auto;
-}
+        /* Estilo para los textos en verde */
+        .green-text {
+            color: green;
+            font-size: 16px;
+        }
 
-.icono-grande {
-    width: 70px;
-    height: auto;
-}
-        
-/* Estilos para el título "Bienvenidos" */
+        /* Estilo para los textos en azul */
+        .blue-text {
+            color: blue;
+            font-size: 16px;
+        }
+
+        /* Estilos para el pie de página */
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        /* Estilos para los iconos */
+        .icono-pequeno {
+            width: 30px;
+            height: auto;
+        }
+
+        .icono-mediano {
+            width: 50px;
+            height: auto;
+        }
+
+        .icono-grande {
+            width: 70px;
+            height: auto;
+        }
+
+        /* Estilos para el título "Bienvenidos" */
         h1 {
             margin: 20px 0; /* Margen superior e inferior de 20 píxeles, sin margen a los lados */
             font-size: 5em; /* Tamaño de fuente 5 veces el tamaño normal */
@@ -42,9 +66,38 @@
                 filter: hue-rotate(360deg); /* Rotación de tono completa */
             }
         }
+
+        /* Estilos para el fondo Matrix */
+        body {
+            background-color: black; /* Color de fondo negro */
+            overflow: hidden; /* Oculta el desbordamiento horizontal */
+        }
+
+        .matrix-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none; /* No interfiere con los eventos del mouse */
+            z-index: -1; /* Detrás de otros elementos */
+            background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.4) 100%); /* Fondo con degradado transparente */
+            animation: matrixRain 0.3s linear infinite; /* Animación de lluvia de caracteres */
+        }
+
+        @keyframes matrixRain {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(100%);
+            }
+        }
     </style>
 </head>
 <body>
+    <div class="matrix-bg"></div> <!-- Fondo Matrix -->
+
     <div class="container">
         <h1>Bienvenidos</h1>
         <p>Disfruten sus futuras compras</p>
