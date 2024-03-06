@@ -5,21 +5,19 @@
     margin-bottom: 100px; /* Margen inferior para permitir el desplazamiento */
 }
 
-/* Estilo para el texto */
+/* Estilo para el texto en blanco */
 .texto-blanco {
     color: white;
 }
 
-/* Estilo para los textos en verde */
-.green-text {
+/* Estilo para el texto en verde */
+.texto-verde {
     color: green;
-    font-size: 16px;
 }
 
-/* Estilo para los textos en azul */
-.blue-text {
+/* Estilo para el texto en azul */
+.texto-azul {
     color: blue;
-    font-size: 16px;
 }
 
 /* Estilos para el pie de página */
@@ -47,7 +45,7 @@
 /* Estilos para el título "Bienvenidos" */
 h1 {
     margin: 20px 0; /* Margen superior e inferior de 20 píxeles, sin margen a los lados */
-    font-size: 3em; /* Tamaño de fuente 3 veces el tamaño normal */
+    font-size: 5em; /* Tamaño de fuente 5 veces el tamaño normal */
     background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); /* Gradiente de color multicolor */
     -webkit-background-clip: text; /* Clip de texto para aplicar el gradiente de color */
     color: transparent; /* Color de texto transparente */
@@ -73,4 +71,5 @@ body {
     background-position: center; /* Posición centrada de la imagen de fondo */
     background-repeat: no-repeat; /* No repetir la imagen de fondo */
     overflow-x: hidden; /* Ocultar desplazamiento horizontal */
+    color: white; /* Color de texto blanco */
 }
