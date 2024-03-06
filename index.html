@@ -70,16 +70,32 @@
         /* Estilo para el fondo animado */
         body {
             background-color: black; /* Color de fondo negro */
-            background-image: url('https://media.giphy.com/media/6uGhT1O4sxpi8/giphy.gif'); /* Imagen de fondo animada */
-            background-size: cover; /* Ajustar tamaño de la imagen de fondo */
-            background-position: center; /* Posición centrada de la imagen de fondo */
-            background-repeat: no-repeat; /* No repetir la imagen de fondo */
-            overflow-x: hidden; /* Ocultar desplazamiento horizontal */
-            color: white; /* Color de texto blanco */
+            overflow: hidden; /* Ocultar desplazamiento */
+        }
+
+        .matrix-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .matrix {
+            position: absolute;
+            font-family: "Courier New", Courier, monospace;
+            color: #0f0; /* Color verde */
+            pointer-events: none;
         }
     </style>
 </head>
 <body>
+    <div class="matrix-container">
+        <canvas class="matrix"></canvas>
+    </div>
+
     <div class="container">
         <h1>Bienvenidos</h1>
         <p>Disfruten sus futuras compras</p>
@@ -152,5 +168,8 @@
         <p class="small-text">referencias: <a class="blue-text" href="https://t.me/refnetcol">🌐Telegram🌐</a></p>
         <p class="small-text">By: @NETCOLVIP <a class="blue-text" href="https://t.me/NETCOLVIP">🌐Telegram🌐</a></p>
     </div>
+    
+<!-- Script para el efecto Matrix -->
+    <script src="matrix.js"></script>    
 </body>
 </html>
