@@ -45,7 +45,7 @@
 /* Estilo para el fondo animado */
 body {
     background-color: black; /* Color de fondo negro */
-    overflow: auto; /* Ocultar desplazamiento */
+    overflow: scroll; /* Ocultar desplazamiento */
 }
 
 .matrix-container {
