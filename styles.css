@@ -5,6 +5,11 @@
     margin-bottom: 100px; /* Margen inferior para permitir el desplazamiento */
 }
 
+/* Estilo para el texto */
+.texto-blanco {
+    color: white;
+}
+
 /* Estilo para los textos en verde */
 .green-text {
     color: green;
