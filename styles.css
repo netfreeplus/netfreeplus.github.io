@@ -60,29 +60,12 @@ h1 {
     }
 }
 
-/* Estilos para el fondo Matrix */
+/* Estilo para el fondo animado */
 body {
     background-color: black; /* Color de fondo negro */
-    overflow-x: hidden; /* Oculta el desplazamiento horizontal */
-}
-
-.matrix-bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none; /* No interfiere con los eventos del mouse */
-    z-index: -1; /* Detrás de otros elementos */
-    background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.4) 100%); /* Fondo con degradado transparente */
-    animation: matrixRain 0.3s linear infinite; /* Animación de lluvia de caracteres */
-}
-
-@keyframes matrixRain {
-    0% {
-        transform: translateY(-100%);
-    }
-    100% {
-        transform: translateY(100%);
-    }
+    background-image: url('https://media.giphy.com/media/6uGhT1O4sxpi8/giphy.gif'); /* Imagen de fondo animada */
+    background-size: cover; /* Ajustar tamaño de la imagen de fondo */
+    background-position: center; /* Posición centrada de la imagen de fondo */
+    background-repeat: no-repeat; /* No repetir la imagen de fondo */
+    overflow-x: hidden; /* Ocultar desplazamiento horizontal */
 }
