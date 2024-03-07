@@ -7,17 +7,17 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: rgb(247, 247, 247); /* Cambia el color de fondo del cuerpo según tu preferencia */
+            background-color: rgb(247, 247, 247);
             margin: 0;
             padding: 0;
-            color: rgb(51, 51, 51); /* Cambia el color del texto según tu preferencia */
+            color: rgb(51, 51, 51);
         }
 
         .container {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            text-align: center; /* Centra el contenido del contenedor */
+            text-align: center;
         }
 
         h1 {
@@ -43,32 +43,69 @@
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center; /* Centra los elementos del menú horizontalmente */
+            justify-content: center;
         }
 
         nav ul li {
-            margin-right: 20px;
+            margin-right: 10px;
         }
 
         nav ul li a {
             color: rgb(51, 51, 51);
             text-decoration: none;
-            font-size: 1.2em;
+            font-size: 1em;
+            padding: 5px 10px;
+            display: inline-block;
+            border-radius: 5px;
+            border: 1px solid transparent; /* Inicialmente transparente */
+            transition: border-color 0.3s ease; /* Transición suave del color del borde */
+            position: relative; /* Añade posición relativa para los enlaces */
+        }
+
+        nav ul li a:before {
+            content: ''; /* Añade contenido vacío para el pseudo-elemento */
+            position: absolute; /* Coloca el pseudo-elemento de forma absoluta */
+            top: 0; /* Ajusta la posición superior del pseudo-elemento */
+            left: 0; /* Ajusta la posición izquierda del pseudo-elemento */
+            width: 100%; /* Ajusta el ancho al 100% */
+            height: 100%; /* Ajusta la altura al 100% */
+            border-radius: 5px; /* Ajusta el radio de borde igual que los enlaces */
+            border: 1px solid transparent; /* Ajusta el borde igual que los enlaces */
+            animation: animateBorder 5s infinite alternate; /* Añade animación al borde */
+        }
+
+        @keyframes animateBorder {
+            0% {
+                border-color: rgb(255, 0, 0); /* Cambia el color del borde al rojo */
+            }
+            25% {
+                border-color: rgb(0, 255, 0); /* Cambia el color del borde al verde */
+            }
+            50% {
+                border-color: rgb(0, 0, 255); /* Cambia el color del borde al azul */
+            }
+            75% {
+                border-color: rgb(255, 255, 0); /* Cambia el color del borde al amarillo */
+            }
+            100% {
+                border-color: rgb(255, 0, 255); /* Cambia el color del borde al rosa */
+            }
         }
 
         nav ul li a:hover {
             color: rgb(255, 0, 0);
+            border-color: rgb(255, 0, 0); /* Cambio de color del borde al hacer hover */
         }
 
         .footer {
             margin-top: 50px;
             text-align: center;
             font-size: 0.8em;
-            color: rgb(102, 102, 102); /* Cambia el color del texto del pie de página según tu preferencia */
+            color: rgb(102, 102, 102);
         }
 
         .footer a {
-            color: rgb(0, 123, 255); /* Cambia el color de los enlaces del pie de página según tu preferencia */
+            color: rgb(0, 123, 255);
             text-decoration: none;
         }
 
@@ -77,7 +114,7 @@
         }
 
         .footer small {
-            font-size: 0.6em; /* Ajusta el tamaño de la letra del texto pequeño del pie de página según tu preferencia */
+            font-size: 0.6em;
         }
     </style>
 </head>
@@ -88,6 +125,7 @@
     </div>
 
     <nav>
+<nav>
         <ul>
              <li><a href="recargas.html">📱RECARGAS</a></li>
             <li><a href="streaming.html">🎬STREAMING</a></li>
@@ -99,20 +137,21 @@
         <ul>
             <li><a href="WIFI.html">🔓CLAVES-WIFI</a></li>
             <li><a href="music.html">🔊MUSICA</a></li>
-</ul>
-  </nav>
+        </ul>
+</nav>
+
 <nav>
         <ul>
             <li><a href="vps.html">📡VPS⚡</a></li>
             <li><a href="contacto.html">🗿Contactame🗿</a></li>
-</ul>
-  </nav>
+        </ul>
+</nav>
+
 <nav>
         <ul>
             <li><a href="acercade.html">🔥Sobre Nosotros🔥</a></li>
-</ul>
-  </nav>
-
+        </ul>
+</nav>
 
     <div class="footer">
         <h1><small>referencias: <a href="https://t.me/refnetcol" style="color: rgb(0, 123, 255);">@refnetcol</small></a></h1>
