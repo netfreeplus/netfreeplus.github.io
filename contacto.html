@@ -1,1 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
 
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: changeColor 10s infinite alternate;
+        }
+
+        @keyframes changeColor {
+            0% {
+                filter: hue-rotate(0deg);
+            }
+            100% {
+                filter: hue-rotate(360deg);
+            }
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .contact-link {
+            text-decoration: none;
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 5px;
+            background-color: #007bff;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-link-whatsapp {
+            background-color: #28a745;
+        }
+
+        .contact-link-references {
+            background-color: #6c757d;
+        }
+
+        .contact-link:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><big><big><big>Contáctame</big></big></big></h1>
+        <div class="contact-links">
+            <a href="https://t.me/NETCOLVIP" class="contact-link">Contactar por Telegram</a>
+            <a href="https://wa.me/+573127585418" class="contact-link contact-link-whatsapp">Contactar por WhatsApp</a>
+        </div><br>
+        <a href="https://t.me/refnetcol" class="contact-link contact-link-references">Referencias</a>
+    </div>
+</body>
+</html>
