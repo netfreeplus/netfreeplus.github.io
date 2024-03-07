@@ -1,3 +1,8 @@
+body {
+    background-color: #f0f0f0; /* Cambia el color de fondo a uno más claro */
+    overflow: hidden; /* Ocultar desplazamiento */
+}
+
 body, html {
     margin: 0;
     padding: 0;
