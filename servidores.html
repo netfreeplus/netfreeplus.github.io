@@ -4,9 +4,131 @@
     <meta charset="UTF-8">
     <title>🚀 Servidores Privados - NETCOL-VIP 🚀</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-y: scroll;
+            color: #333;
+        }
+
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .header {
+            background-color: transparent;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+            z-index: 1;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            background-image: linear-gradient(to right, #FF5722, #FFC107, #4CAF50, #2196F3, #9C27B0, #F44336, #FF5722);
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: changeColor 2s infinite linear;
+        }
+
+        @keyframes changeColor {
+            0% {
+                filter: hue-rotate(0deg);
+            }
+            100% {
+                filter: hue-rotate(360deg);
+            }
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: transparent;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .server-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .server-list li {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+
+        .server-name {
+            font-weight: bold;
+            color: #2196F3;
+        }
+
+        .server-price {
+            font-size: 1.2em;
+            color: #4CAF50;
+        }
+
+        .server-buy-btn-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .server-buy-btn {
+            color: #fff;
+            background-color: #FF5722;
+            border: none;
+            padding: 8px 16px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 10px;
+            transition: background-color 0.3s;
+        }
+
+        .server-buy-btn:hover {
+            background-color: #FFC107;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            position: relative;
+            z-index: 1;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
+    <div class="background"></div>
     <div class="header">
         <h1><big>🚀 Servidores Privados - NETCOL-VIP 🚀</h1>
     </div>
@@ -37,5 +159,43 @@
     <div class="footer">
         <p>© 2024 NETCOL-VIP - Todos los derechos reservados</p>
     </div>
+
+    <script>
+        var layerCount = 5;
+        var starCount = 400;
+        var maxTime = 30;
+        var universe = document.querySelector(".background");
+        var w = window;
+        var d = document;
+        var e = d.documentElement;
+        var g = d.getElementsByTagName("body")[0];
+        var width = w.innerWidth || e.clientWidth || g.clientWidth;
+        var height = w.innerHeight || e.clientHeight || g.clientHeight;
+        for (var i = 0; i < starCount; ++i) {
+          var ypos = Math.round(Math.random() * height);
+          var star = document.createElement("div");
+          var speed = 1000 * (Math.random() * maxTime + 1);
+          star.setAttribute("class", "star" + (3 - Math.floor(speed / 1000 / 8)));
+          star.style.backgroundColor = "white";
+
+          universe.appendChild(star);
+          star.animate(
+            [
+              {
+                transform: "translate3d(" + width + "px, " + ypos + "px, 0)"
+              },
+              {
+                transform:
+                  "translate3d(-" + Math.random() * 256 + "px, " + ypos + "px, 0)"
+              }
+            ],
+            {
+              delay: Math.random() * -speed,
+              duration: speed,
+              iterations: 1000
+            }
+          );
+        }
+    </script>
 </body>
 </html>
