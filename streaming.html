@@ -31,6 +31,20 @@
             padding: 20px;
             margin-bottom: 20px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: calc(50% - 20px); /* Cambia el ancho según el número de columnas deseado */
+            margin-right: 20px;
+            float: left;
+        }
+
+        .producto:nth-child(2n) {
+            margin-right: 0;
+        }
+
+        @media (max-width: 600px) {
+            .producto {
+                width: calc(100% - 20px);
+                margin-right: 0;
+            }
         }
 
         .producto h2 {
@@ -93,7 +107,7 @@
     <div class="container">
         <h1>¡Cuentas de Streaming Disponibles!</h1>
         
-        <div class="producto">
+<div class="producto">
             <h2><img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Icono Netflix"> Perfil de Netflix</h2>
             <div class="precio">$10.000 /1 mes de garantía</div>
             <div class="descripcion">Disfruta de contenido exclusivo en Netflix.</div>
@@ -155,7 +169,5 @@
             <div class="descripcion">Organiza y transmite tu contenido multimedia con Plex.</div>
             <a href="http://t.me/NETCOLVIP" class="enlace-comprar">COMPRAR POR TELEGRAM</a>
             <a href="https://wa.me/+573127585418" class="enlace-comprar2">COMPRAR POR WHATSAPP</a>
-        </div>
-    </div>
 </body>
 </html>
