@@ -4,43 +4,31 @@
     <meta charset="UTF-8">
     <title>⚡NETCOL-VIP⚡</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <style>
-
-
-        nav ul {
-            list-style-type: none;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(247, 247, 247); /* Cambia el color de fondo del cuerpo según tu preferencia */
             margin: 0;
             padding: 0;
+            color: rgb(51, 51, 51); /* Cambia el color del texto según tu preferencia */
         }
 
-        nav ul li {
-            display: inline;
-            margin-right: 20px; /* Ajusta el espaciado entre los botones de menú según tu preferencia */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center; /* Centra el contenido del contenedor */
         }
 
-        nav ul li a {
-            color: black; /* Cambia el color del texto de los botones según tu preferencia */
-            text-decoration: none;
-            font-size: 18px; /* Ajusta el tamaño del texto de los botones según tu preferencia */
-        }
-
-        nav ul li a:hover {
-            color: #f00; /* Cambia el color del texto al pasar el mouse por encima según tu preferencia */
-        }
-
-        /* Estilo para el título "Bienvenidos" */
         h1 {
-            margin: 60px 0 20px; /* Ajusta el margen superior del título según tu preferencia */
-            font-size: 5em;
+            font-size: 3em;
+            margin-bottom: 20px;
             background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
             -webkit-background-clip: text;
             color: transparent;
-            text-align: center;
-            animation: changeColor 10s infinite alternate;
+            animation: changeColor 5s infinite alternate;
         }
 
-        /* Definición de la animación */
         @keyframes changeColor {
             0% {
                 filter: hue-rotate(0deg);
@@ -50,42 +38,70 @@
             }
         }
 
-        /* Estilo para el fondo animado */
-        body {
-            background-color: whith;
-            overflow: hidden;
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center; /* Centra los elementos del menú horizontalmente */
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: rgb(51, 51, 51);
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        nav ul li a:hover {
+            color: rgb(255, 0, 0);
+        }
+
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 0.8em;
+            color: rgb(102, 102, 102); /* Cambia el color del texto del pie de página según tu preferencia */
+        }
+
+        .footer a {
+            color: rgb(0, 123, 255); /* Cambia el color de los enlaces del pie de página según tu preferencia */
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer small {
+            font-size: 0.6em; /* Ajusta el tamaño de la letra del texto pequeño del pie de página según tu preferencia */
         }
     </style>
 </head>
 <body>
+    <div class="container">
+        <h1>Bienvenidos</h1>
+        <h2>Disfruten sus futuras compras</h2>
+    </div>
 
     <nav>
         <ul>
-            <li><a class="blue-text" href="index.html">Inicio</a></li>
-            <li><a href="index.html">Página 1</a></li> <!-- Enlace a pagina1.html -->
-            <li><a href="streaming.html">🎬Streaming🎬</a></li> <!-- Enlace a pagina2.html -->
-            <li><a href="WIFI.html">🔒WIFI v2🔓</a></li> <!-- Enlace a WIFI.html en la misma carpeta -->
-            <li><a href="recargas.html">⚡RECARGAS⚡</a></li> <!-- Enlace a recargas.html en la misma carpeta -->
-            <li><a href="music.html">🎷Música🔊</a></li> <!-- Enlace a WIFI.html -->
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="streaming.html">🎬Streaming🎬</a></li>
+            <li><a href="WIFI.html">🔒WIFI v2🔓</a></li>
+            <li><a href="recargas.html">⚡RECARGAS⚡</a></li>
+            <li><a href="music.html">🎷Música🔊</a></li>
             <li><a href="#">Acerca de</a></li>
             <li><a href="#">Contacto</a></li>
         </ul>
     </nav>
 
-    <!-- Contenido de la página -->
-    <div class="container">
-        <h1>Bienvenidos</h1>
-        <p>Disfruten sus futuras compras</p>
-    </div>
-
-    <!-- Servicios -->
-    <!-- Tu código de servicios aquí -->
-
-    <!-- Footer -->
     <div class="footer">
-        <p class="small-text">referencias: <a class="blue-text" href="https://t.me/refnetcol">🌐Telegram🌐</a></p>
-        <p class="small-text">By: @NETCOLVIP <a class="blue-text" href="https://t.me/NETCOLVIP">🌐Telegram🌐</a></p>
+        <h1><small>referencias: <a href="https://t.me/refnetcol" style="color: rgb(0, 123, 255);">🌐Telegram🌐</small></a></h1>
+        <h1><small>By: @NETCOLVIP <a href="https://t.me/NETCOLVIP" style="color: rgb(0, 123, 255);">🌐Telegram🌐</a></p>
     </div>
-    
 </body>
 </html>
