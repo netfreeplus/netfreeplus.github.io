@@ -1,8 +1,14 @@
 /* Estilos para dispositivos móviles */
 @media screen and (max-width: 768px) {
-    .container {
+    .mobile-view .container {
         padding: 10px;
     }
+
+    .mobile-view .product {
+        width: calc(33.33% - 20px);
+        margin: 10px;
+    }
+}
 
     .product {
         width: calc(33.33% - 20px); /* Calcula el ancho para tres columnas */
