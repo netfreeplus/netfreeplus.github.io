@@ -1,3 +1,16 @@
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .product {
+        width: calc(33.33% - 20px); /* Calcula el ancho para tres columnas */
+        margin: 10px; /* Espacio entre los productos */
+    }
+}
+
+
 /* Estilos generales */
 * {
     margin: 0;
