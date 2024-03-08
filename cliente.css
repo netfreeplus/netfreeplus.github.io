@@ -33,6 +33,11 @@ body {
     overflow: hidden;
     transition: transform 0.3s;
     width: calc(33.33% - 20px); /* Calcula el ancho para tres columnas */
+    margin-bottom: 20px; /* Espacio entre los productos */
+}
+
+.product:last-child {
+    margin-bottom: 0; /* Elimina el espacio inferior del último producto en la fila */
 }
 
 .product:hover {
