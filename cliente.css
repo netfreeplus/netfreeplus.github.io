@@ -1,22 +1,3 @@
-/* Estilos para dispositivos móviles */
-@media screen and (max-width: 768px) {
-    .mobile-view .container {
-        padding: 10px;
-    }
-
-    .mobile-view .product {
-        width: calc(33.33% - 20px);
-        margin: 10px;
-    }
-}
-
-    .product {
-        width: calc(33.33% - 20px); /* Calcul a el ancho para tres columnas */
-        margin: 10px; /* Espacio entre los productos */
-    }
-}
-
-
 /* Estilos generales */
 * {
     margin: 0;
@@ -37,9 +18,8 @@ body {
 
 .container {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    justify-content: space-around; /* Alinea los productos alrededor del centro */
     padding: 20px;
 }
 
@@ -49,7 +29,8 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s;
-    width: 300px;
+    flex: 0 0 calc(30% - 20px); /* Ocupa el 30% del ancho disponible, con 20px de espacio entre productos */
+    margin-bottom: 20px; /* Espacio entre filas de productos */
 }
 
 .product:hover {
