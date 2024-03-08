@@ -11,7 +11,7 @@
 }
 
     .product {
-        width: calc(33.33% - 20px); /* Calcula el ancho para tres columnas */
+        width: calc(33.33% - 20px); /* Calcul a el ancho para tres columnas */
         margin: 10px; /* Espacio entre los productos */
     }
 }
