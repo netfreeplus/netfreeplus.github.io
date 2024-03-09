@@ -37,6 +37,7 @@ body {
     color: #fff;
     padding: 1.5cm 0;
     text-align: center;
+    position: relative; /* Agrega esta línea */
 }
 
 .container {
@@ -104,9 +105,9 @@ body {
 }
 
 .reload-btn {
-    position: fixed; /* Fija el botón en la ventana del navegador */
-    top: 20px;
-    left: 20px;
+    position: absolute; /* Fija el botón en la cabecera */
+    top: 20px; /* Ajusta la distancia superior según sea necesario */
+    left: 20px; /* Ajusta la distancia izquierda según sea necesario */
     background-color: #007bff;
     color: #fff;
     padding: 10px 20px;
