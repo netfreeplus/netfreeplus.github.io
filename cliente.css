@@ -13,6 +13,10 @@
         width: 100%; /* Haz que la imagen ocupe todo el ancho del contenedor */
         height: auto; /* Altura automática para mantener la proporción */
     }
+
+    .product-details {
+        font-size: 0.8em; /* Reducir el tamaño de fuente para que quepa más contenido */
+    }
 }
 
 /* Estilos generales */
@@ -47,7 +51,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s;
-    width: 300px;
+    width: 300px; /* Ancho original */
 }
 
 .product:hover {
