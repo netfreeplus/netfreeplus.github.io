@@ -6,14 +6,8 @@
     }
 
     .product {
-        width: calc(100% - 20px); /* Calcula el ancho para una columna */
+        width: calc(33.33% - 20px); /* Cambia el ancho para tres columnas */
         margin-bottom: 10px; /* Espacio entre los productos */
-    }
-
-    .product-inner {
-        padding: 10px; /* Ajuste del padding */
-        display: flex;
-        align-items: center;
     }
 
     .product-img {
