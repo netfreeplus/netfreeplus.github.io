@@ -1,22 +1,17 @@
 /* Estilos para dispositivos móviles */
 @media screen and (max-width: 768px) {
     .container {
-        flex-wrap: nowrap; /* Evitar que los productos se envuelvan */
+        flex-wrap: wrap; /* Permitir que los productos se envuelvan en dispositivos móviles */
     }
 
     .product {
-        width: calc(33.33% - 20px); /* Calcula el ancho para tres columnas */
+        width: calc(33.33% - 20px); /* Calcula el ancho para tres columnas con espacio entre ellos */
         margin: 10px; /* Espacio entre los productos */
     }
 
-    .product-img {
-        max-width: 100%; /* Ajuste del tamaño máximo de la imagen */
+    .product .product-img {
+        width: 100%; /* Haz que la imagen ocupe todo el ancho del contenedor */
         height: auto; /* Altura automática para mantener la proporción */
-        max-height: 150px; /* Tamaño máximo de la imagen */
-    }
-
-    .product-details {
-        padding: 10px; /* Ajuste del padding */
     }
 }
 
@@ -64,8 +59,6 @@ body {
 }
 
 .product-img {
-    width: 100%;
-    height: auto;
     display: block;
 }
 
