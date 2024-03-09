@@ -1,14 +1,15 @@
 /* Estilos para dispositivos móviles */
 @media screen and (max-width: 768px) {
     .container {
-        flex-wrap: wrap; /* Permitir que los productos se envuelvan en dispositivos móviles */
-        justify-content: space-between; /* Distribuir los productos de manera uniforme en el contenedor */
-        padding: 0 10px; /* Ajustar el relleno del contenedor para evitar que los productos se desborden */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px;
     }
 
     .product {
-        width: calc(33.33% - 20px); /* Calcula el ancho para tres columnas con espacio entre ellos */
-        margin-bottom: 20px; /* Espacio entre los productos */
+        width: calc(33.33% - 20px);
+        margin-bottom: 20px;
     }
 }
 
@@ -34,7 +35,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px; /* Espacio entre los productos */
+    gap: 20px;
     padding: 20px;
 }
 
@@ -44,7 +45,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s;
-    width: calc(33.33% - 20px); /* Ancho ajustado para tres columnas con espacio entre ellas */
+    width: 300px;
 }
 
 .product:hover {
@@ -56,9 +57,9 @@ body {
 }
 
 .product-img {
+    width: 100%;
+    height: auto;
     display: block;
-    width: 100%; /* Asegura que la imagen ocupe todo el ancho */
-    height: auto; /* Altura automática para mantener la proporción */
 }
 
 .product-details {
