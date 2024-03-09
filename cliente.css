@@ -27,24 +27,6 @@
         padding: 10px 0; /* Ajuste del padding */
         flex: 1;
     }
-
-    .reload-btn {
-        position: fixed;
-        bottom: 20px;
-        left: 20px;
-        background-color: transparent;
-        color: #007bff;
-        border: 2px solid #007bff;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 16px;
-    }
-
-    .reload-btn:hover {
-        background-color: #007bff;
-        color: #fff;
-    }
 }
 
 /* Estilos generales */
@@ -121,13 +103,4 @@ body {
     background-color: #f8f9fa;
     padding: 20px 0;
     text-align: center;
-}
-
-/* Estilos para la versión de escritorio */
-@media screen and (min-width: 769px) {
-    .reload-btn {
-        position: absolute;
-        top: 20px;
-        left: 20px;
-    }
 }
