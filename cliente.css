@@ -2,17 +2,23 @@
 @media screen and (max-width: 768px) {
     /* Estilos para el botón de recargas */
     .reload-btn {
-        position: fixed;
-        top: 20px;
-        left: 20px;
-        background-color: #007bff;
-        color: #fff;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        z-index: 999; /* Para asegurarse de que el botón esté encima de otros elementos */
-    }
+    position: fixed;
+    bottom: 20px; /* Ajusta la distancia desde el borde inferior */
+    left: 20px; /* Ajusta la distancia desde el borde izquierdo */
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    padding: 10px 20px; /* Espacio interno del botón */
+    border: none; /* Elimina el borde del botón */
+    border-radius: 5px; /* Añade bordes redondeados al botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    text-decoration: none; /* Elimina el subrayado del texto */
+    font-size: 16px; /* Tamaño del texto */
+}
+
+.reload-btn:hover {
+    background-color: #0056b3; /* Cambia el color de fondo al pasar el cursor */
+}
+
 
     .container {
         flex-direction: column;
