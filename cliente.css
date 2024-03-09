@@ -40,6 +40,7 @@ body {
 
 .product-inner {
     position: relative;
+    padding: 20px; /* Ajuste del padding */
 }
 
 .product-img {
@@ -50,7 +51,7 @@ body {
 }
 
 .product-details {
-    padding: 20px;
+    padding: 20px 0; /* Ajuste del padding */
 }
 
 .product h2 {
@@ -92,5 +93,13 @@ body {
     .product {
         width: calc(100% - 20px); /* Calcula el ancho para una columna */
         margin-bottom: 10px; /* Espacio entre los productos */
+    }
+
+    .product-inner {
+        padding: 20px; /* Ajuste del padding */
+    }
+
+    .product-details {
+        padding: 20px 0; /* Ajuste del padding */
     }
 }
