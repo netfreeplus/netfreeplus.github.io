@@ -96,10 +96,14 @@ body {
     }
 
     .product-inner {
-        padding: 20px; /* Ajuste del padding */
+        padding: 10px; /* Ajuste del padding */
+    }
+
+    .product-img {
+        max-width: 100%; /* Ajuste del tamaño máximo de la imagen */
     }
 
     .product-details {
-        padding: 20px 0; /* Ajuste del padding */
+        padding: 10px 0; /* Ajuste del padding */
     }
 }
