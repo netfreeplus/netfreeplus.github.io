@@ -11,11 +11,20 @@
 
     .product .product-img {
         width: 100%; /* Haz que la imagen ocupe todo el ancho del contenedor */
-        height: auto; /* Altura automática para mantener la proporción */
+        max-height: 150px; /* Limita la altura máxima de la imagen para evitar que sea demasiado grande */
+        object-fit: cover; /* Escala la imagen para que se ajuste dentro de su contenedor manteniendo la relación de aspecto */
     }
 
     .product-details {
         font-size: 0.8em; /* Reducir el tamaño de fuente para que quepa más contenido */
+    }
+
+    .product h2 {
+        font-size: 1em; /* Reducir el tamaño del título del producto */
+    }
+
+    .product p {
+        font-size: 0.8em; /* Reducir el tamaño del texto del producto */
     }
 }
 
