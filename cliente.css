@@ -51,7 +51,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s;
-    width: 300px; /* Ancho original */
+    width: calc(33.33% - 20px); /* Ancho ajustado para tres columnas con espacio entre ellas */
 }
 
 .product:hover {
@@ -64,6 +64,8 @@ body {
 
 .product-img {
     display: block;
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho */
+    height: auto; /* Altura automática para mantener la proporción */
 }
 
 .product-details {
