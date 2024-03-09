@@ -1,18 +1,20 @@
 /* Estilos para dispositivos móviles */
 @media screen and (max-width: 768px) {
     .container {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     .product {
-        width: calc(100% - 20px); /* Calcula el ancho para una columna */
-        margin-bottom: 10px; /* Espacio entre los productos */
+        width: calc(33.33% - 20px); /* Calcula el ancho para tres columnas */
+        margin-bottom: 20px; /* Espacio entre los productos */
     }
 
     .product-inner {
         padding: 10px; /* Ajuste del padding */
         display: flex;
+        flex-direction: column;
         align-items: center;
     }
 
