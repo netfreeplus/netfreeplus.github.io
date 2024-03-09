@@ -8,6 +8,15 @@
         width: calc(33.33% - 20px); /* Calcula el ancho para tres columnas */
         margin: 10px; /* Espacio entre los productos */
     }
+
+    .product-img {
+        max-width: 100%; /* Ajuste del tamaño máximo de la imagen */
+        height: auto; /* Altura automática para mantener la proporción */
+    }
+
+    .product-details {
+        padding: 10px; /* Ajuste del padding */
+    }
 }
 
 /* Estilos generales */
