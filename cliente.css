@@ -19,7 +19,9 @@
     }
 
     .product-img {
-        max-width: 100%; /* Ajuste del tamaño máximo de la imagen */
+        width: 100%; /* Ajuste del tamaño máximo de la imagen */
+        max-height: 200px; /* Altura máxima de la imagen */
+        object-fit: contain; /* Ajuste del tamaño de la imagen sin deformarla */
     }
 
     .product-details {
@@ -60,7 +62,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s;
-    width: 300px; /* Ancho fijo de los productos */
+    width: 300px;
 }
 
 .product:hover {
@@ -108,25 +110,4 @@ body {
     background-color: #f8f9fa;
     padding: 20px 0;
     text-align: center;
-}
-
-/* Estilos para el botón de Recargas */
-.reload-btn {
-    position: fixed;
-    left: 10px;
-    bottom: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    z-index: 1000; /* Asegura que el botón esté encima de otros elementos */
-}
-
-/* Ajustes para dispositivos móviles */
-@media screen and (max-width: 768px) {
-    .reload-btn {
-        bottom: 70px; /* Ajusta la posición en dispositivos móviles */
-    }
 }
