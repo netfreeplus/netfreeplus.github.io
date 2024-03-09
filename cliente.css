@@ -2,28 +2,13 @@
 @media screen and (max-width: 768px) {
     .container {
         flex-wrap: wrap; /* Permitir que los productos se envuelvan en dispositivos móviles */
+        justify-content: space-between; /* Distribuir los productos de manera uniforme en el contenedor */
+        padding: 0 10px; /* Ajustar el relleno del contenedor para evitar que los productos se desborden */
     }
 
     .product {
         width: calc(33.33% - 20px); /* Calcula el ancho para tres columnas con espacio entre ellos */
-        margin: 10px; /* Espacio entre los productos */
-    }
-
-    .product-img {
-        width: 100%; /* Haz que la imagen ocupe todo el ancho del contenedor */
-        max-height: 150px; /* Limita la altura máxima de la imagen */
-    }
-
-    .product-details {
-        font-size: 0.8em; /* Reducir el tamaño de fuente para que quepa más contenido */
-    }
-
-    .product h2 {
-        font-size: 1em; /* Reducir el tamaño del título del producto */
-    }
-
-    .product p {
-        font-size: 0.9em; /* Reducir el tamaño del texto del producto */
+        margin-bottom: 20px; /* Espacio entre los productos */
     }
 }
 
