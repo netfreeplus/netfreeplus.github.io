@@ -1,11 +1,22 @@
-/* Estilos para dispositivos móviles */
+.reload-btn {
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000; /* Asegura que el botón esté encima de otros elementos */
+}
+
+/* Ajustes para dispositivos móviles */
 @media screen and (max-width: 768px) {
-    .container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-        padding: 10px;
+    .reload-btn {
+        bottom: 70px; /* Ajusta la posición en dispositivos móviles */
     }
+}
 
     .product {
         width: 100%;
