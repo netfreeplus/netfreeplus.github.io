@@ -1,27 +1,37 @@
 /* Estilos para dispositivos móviles */
 @media screen and (max-width: 768px) {
+    /* Estilos para el botón de recargas */
+    .reload-btn {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 999; /* Para asegurarse de que el botón esté encima de otros elementos */
+    }
+
     .container {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
     }
 
     .product {
-        width: calc(33.33% - 20px); /* Calcula el ancho para tres columnas */
-        margin-bottom: 20px; /* Espacio entre los productos */
+        width: calc(100% - 20px); /* Calcula el ancho para una columna */
+        margin-bottom: 10px; /* Espacio entre los productos */
     }
 
     .product-inner {
         padding: 10px; /* Ajuste del padding */
         display: flex;
-        flex-direction: column;
         align-items: center;
     }
 
     .product-img {
-        width: 100%; /* Ajuste del tamaño máximo de la imagen */
-        max-height: 200px; /* Altura máxima de la imagen */
-        object-fit: contain; /* Ajuste del tamaño de la imagen sin deformarla */
+        max-width: 100%; /* Ajuste del tamaño máximo de la imagen */
     }
 
     .product-details {
