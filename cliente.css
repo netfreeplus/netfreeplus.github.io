@@ -32,7 +32,8 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s;
-    width: calc(33.33% - 20px); /* Calcula el ancho para tres columnas */
+    width: calc(50% - 20px); /* Calcula el ancho para dos columnas */
+    margin-bottom: 20px; /* Espacio entre los productos */
 }
 
 .product:hover {
@@ -80,4 +81,21 @@ body {
     background-color: #f8f9fa;
     padding: 20px 0;
     text-align: center;
+}
+
+.reload-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.reload-btn:hover {
+    background-color: #0056b3;
 }
