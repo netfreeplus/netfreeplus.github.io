@@ -6,17 +6,41 @@
     }
 
     .product {
-        width: calc(33.33% - 20px); /* Cambia el ancho para tres columnas */
-        margin-bottom: 10px; /* Espacio entre los productos */
+        width: calc(100% - 20px);
+        margin-bottom: 10px;
+    }
+
+    .product-inner {
+        padding: 10px;
+        display: flex;
+        align-items: center;
     }
 
     .product-img {
-        max-width: 100%; /* Ajuste del tamaño máximo de la imagen */
+        max-width: 100%;
     }
 
     .product-details {
-        padding: 10px 0; /* Ajuste del padding */
+        padding: 10px 0;
         flex: 1;
+    }
+
+    .reload-btn {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        background-color: transparent;
+        color: #007bff;
+        border: 2px solid #007bff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .reload-btn:hover {
+        background-color: #007bff;
+        color: #fff;
     }
 }
 
@@ -29,7 +53,6 @@
 
 body {
     font-family: Arial, sans-serif;
-    position: relative; /* Para el posicionamiento absoluto del botón */
 }
 
 .header {
@@ -37,7 +60,6 @@ body {
     color: #fff;
     padding: 1.5cm 0;
     text-align: center;
-    position: relative; /* Agrega esta línea */
 }
 
 .container {
@@ -104,19 +126,11 @@ body {
     text-align: center;
 }
 
-.reload-btn {
-    position: absolute; /* Fija el botón en la cabecera */
-    top: 20px; /* Ajusta la distancia superior según sea necesario */
-    left: 20px; /* Ajusta la distancia izquierda según sea necesario */
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.reload-btn:hover {
-    background-color: #0056b3;
+/* Estilos para la versión de escritorio */
+@media screen and (min-width: 769px) {
+    .reload-btn {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
 }
