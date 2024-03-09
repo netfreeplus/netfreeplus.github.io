@@ -45,6 +45,7 @@ body {
     width: 100%;
     height: auto;
     display: block;
+    max-width: 200px; /* Tamaño máximo para las imágenes */
 }
 
 .product-details {
