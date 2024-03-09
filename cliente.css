@@ -31,6 +31,7 @@ body {
     overflow: hidden;
     transition: transform 0.3s;
     width: 300px;
+    flex: 1 1 calc(33.33% - 20px); /* Ajuste del tamaño de las imágenes */
 }
 
 .product:hover {
