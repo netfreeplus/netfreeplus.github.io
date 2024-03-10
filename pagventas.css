@@ -24,6 +24,12 @@ main {
   padding: 50px 0;
 }
 
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 .product {
   background-color: #fff;
   border-radius: 10px;
@@ -32,6 +38,7 @@ main {
   margin-bottom: 30px;
   text-align: center;
   transition: transform 0.3s ease;
+  width: 30%;
 }
 
 .product:hover {
@@ -39,7 +46,7 @@ main {
 }
 
 .product img {
-  width: 200px;
+  width: 100%;
   height: auto;
   border-radius: 10px;
   margin-bottom: 20px;
