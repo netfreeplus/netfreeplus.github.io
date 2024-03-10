@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Objeto con usuarios y contraseñas, cada uno con su fecha de vencimiento
     var users = {
         "Sebas": { "password": "Admin", "expiryDate": new Date("2024-03-31") },
-        "usuario2": { "password": "contraseña2", "expiryDate": new Date("2024-04-15") }
+        "Netcol": { "password": "Vip", "expiryDate": new Date("2024-04-15") }
         // Agrega más usuarios y fechas de vencimiento según sea necesario
     };
 
