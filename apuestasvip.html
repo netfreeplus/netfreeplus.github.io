@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="apuestasvip.css">
+    <title>Página de Apuestas VIP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #3F51B5;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        main {
+            padding: 20px;
+        }
+        .apuestas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        article {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden; /* Evitar que el contenido sobresalga del contenedor */
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        article img {
+            width: 100%;
+            border-top-left-radius: 10px; /* Ajustar las esquinas de la imagen */
+            border-top-right-radius: 10px;
+        }
+        article div {
+            padding: 20px;
+        }
+        footer {
+            background-color: #3F51B5;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        /* Estilos para el formulario de inicio de sesión */
+        .overlay {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column; /* Ajustar la dirección del contenido */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 999;
+            animation: rgbAnimation 5s infinite alternate; /* Aumentar velocidad de la animación */
+        }
+        @keyframes rgbAnimation {
+            0% { background-color: #ff0055; }
+            25% { background-color: #00ff55; }
+            50% { background-color: #0055ff; }
+            75% { background-color: #ff5500; }
+            100% { background-color: #ff0099; }
+        }
+        .login {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 200px; /* Reducir aún más el ancho del formulario */
+            width: 80%;
+        }
+        .login h2 {
+            margin-bottom: 20px;
+            color: #1100fc9d;
+        }
+
+        .quieres {
+            margin-bottom: 5px;
+            color: #000000;
+        }
+
+        .registro {
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        .registrarse {
+            margin-bottom: 20px;
+            color: #1900ff;
+        }
+        .inputBx {
+            margin-bottom: 20px;
+        }
+        .inputBx input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .links {
+            margin-top: 20px;
+        }
+        .links a {
+            color: #3F51B5;
+            text-decoration: none;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+        .customer-info {
+            text-align: center;
+            margin-top: 20px; /* Añadir espacio entre el formulario de inicio de sesión y la información del cliente */
+            font-size: 18px;
+            color: #555;
+        }
+        .customer-info p {
+            margin-bottom: 10px;
+        }
+        .customer-info a {
+            color: #3F51B5;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .customer-info a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Contenido VIP -->
+    <div id="vipContent" style="display: none;">
+        <header>
+            <h1>Bienvenido Apuestas VIP</h1>
+            <p>Este es el contenido exclusivo para usuarios VIP.</p>
+        </header>
+        <main>
+            <h2>¡Disfruta de las mejores apuestas VIP!</h2>
+            <div class="apuestas">
+                <article>
+                    <img src="imagen_partido1.jpg" alt="Partido 1">
+                    <div>
+                        <h3>Partido 1</h3>
+                        <p><strong>Fecha:</strong> 10 de marzo de 2024</p>
+                        <p><strong>Hora:</strong> 20:00</p>
+                        <p><strong>Equipo local:</strong> Equipo A</p>
+                        <p><strong>Equipo visitante:</strong> Equipo B</p>
+                        <p><strong>Apuesta recomendada:</strong> Victoria del Equipo A</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="imagen_partido2.jpg" alt="Partido 2">
+                    <div>
+                        <h3>Partido 2</h3>
+                        <p><strong>Fecha:</strong> 12 de marzo de 2024</p>
+                        <p><strong>Hora:</strong> 18:30</p>
+                        <p><strong>Equipo local:</strong> Equipo C</p>
+                        <p><strong>Equipo visitante:</strong> Equipo D</p>
+                        <p><strong>Apuesta recomendada:</strong> Empate</p>
+                    </div>
+                </article>
+                <!-- Agrega más artículos de partidos según sea necesario -->
+            </div>
+        </main>
+        <footer>
+            <p>Netcolvip VIP - Todos los derechos reservados</p>
+        </footer>
+    </div>
+
+    <!-- Formulario de inicio de sesión -->
+    <div id="overlay" class="overlay">
+        <div class="login">
+            <h2>Login</h2>
+            <div class="inputBx">
+                <input type="text" id="username" placeholder="Usuario">
+            </div>
+            <div class="inputBx">
+                <input type="password" id="password" placeholder="Contraseña">
+            </div>
+            <div class="inputBx">
+                <input type="button" id="loginButton" value="Iniciar sesión">
+            </div>
+            <div class="links">
+                <a href="https://t.me/NETCOLVIP">Olvidé mi contraseña</a>
+            </div>
+        </div>
+        
+        <!-- Información para los clientes -->
+        <div class="quieres">
+            <h2>¿Quieres ser un cliente VIP?</div>
+                <div class="registro">
+                    <h3>Regístrate ahora y accede a contenido exclusivo, promociones especiales y más.</div>
+                        <div class="registrarse">
+                            <h1><a href="https://t.me/NETCOLVIP">Registrarse</a></div>
+            
+        </div>
+    </div>
+
+    <script src="apuestasvip.js"></script>
+</body>
+</html>
