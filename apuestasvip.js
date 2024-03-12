@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
         "Sebas": { "password": "Admin2", "expiryDate": new Date("2026-03-31") },
         "Santi": { "password": "1029", "expiryDate": new Date("2024-03-31") },
         "Meli": { "password": "Tapias", "expiryDate": new Date("2026-12-12") },
-        "1": { "password": "1", "expiryDate": new Date("2026-03-31") },
+        "1": { "password": "1", "expiryDate": new Date("2026-03-31") }
 
         // Agrega más usuarios y fechas de vencimiento según sea necesario
     };
