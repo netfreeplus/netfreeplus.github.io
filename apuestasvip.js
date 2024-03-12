@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function() {
     var users = {
         "Sebas": { "password": "Admin2", "expiryDate": new Date("2026-03-31") },
         "Santi": { "password": "1029", "expiryDate": new Date("2024-03-31") },
-        "Meli": { "password": "Tapias", "expiryDate": new Date("2026-12-12") },
         "1": { "password": "1", "expiryDate": new Date("2026-03-31") }
 
         // Agrega más usuarios y fechas de vencimiento según sea necesario
@@ -45,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 alert('La cuenta ha expirado. Contacta al administrador.');
             }
         } else {
-            alert('Credenciales incorrectas');
+            alert('Credenciales incorrectas contacta al administrador NETCOLVIP');
         }
     } else {
         // Si no se proporcionaron credenciales en la URL, mostrar el formulario de inicio de sesión
