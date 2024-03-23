@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correos Electrónicos</title>
+    <style>
+        body {
+            font-family: 'Pacifico', cursive;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(to right bottom, #f0f5f9, #c4d7ed, #98b9e0, #6c9ad4, #407bc8);
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 32px;
+            text-transform: uppercase;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        section {
+            margin-bottom: 30px;
+            width: 100%;
+            max-width: 800px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            position: relative;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #333;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #333;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: #000;
+            position: relative;
+            font-weight: bold;
+        }
+
+        .buy-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .buy-button {
+            margin: 0 10px;
+            padding: 12px 24px;
+            font-size: 18px;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            color: #fff;
+            background-color: #4CAF50;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .buy-button.telegram {
+            background-color: #0088cc; /* Azul */
+        }
+
+        .buy-button.whatsapp {
+            background-color: #25D366; /* Verde */
+        }
+
+        .buy-button:hover {
+            background-color: #333;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            font-size: 16px;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Venta de Correos Electrónicos en Colombia
+    </header>
+    <main>
+        <section>
+            <h2>¡Encuentra tus Correos Electrónicos!</h2>
+            <ul>
+                <li style="color: #FF5733;">@hotmail.com - Unidad: $1.800</li>
+                <li style="color: #FFC300;">@outlook.com - Unidad: $1.800</li>
+                <li style="color: #DAF7A6;">@outlook.es - Unidad: $1.800</li>
+                <li style="color: #48C9B0;">@gmail.com - Unidad: $2.400</li>
+            </ul>
+            <div class="buy-buttons">
+                <button class="buy-button telegram" onclick="window.location.href='https://telegram.me/tuusuario'">Comprar por Telegram</button>
+                <button class="buy-button whatsapp" onclick="window.location.href='https://wa.me/numerodewhatsapp'">Comprar por WhatsApp</button>
+            </div>
+        </section>
+        <section>
+            <h2>Detalles de Precios</h2>
+            <div>
+                <h3>¡Precios Especiales!</h3>
+                <ul>
+                    <li>+10 unidades: $1.700, obsequio 1</li>
+                    <li>+20 unidades: $1.600, obsequio 2</li>
+                    <li>+50 unidades: $1.500, obsequio 5</li>
+                    <li>+100 unidades: $1.400, obsequio 10</li>
+                    <li>+200 unidades: $1.200</li>
+                    <li>+500/900 unidades: $1000</li>
+                </ul>
+            </div>
+            <div class="buy-buttons">
+                <button class="buy-button telegram" onclick="window.location.href='https://telegram.me/NetcolVip'">Comprar por Telegram</button>
+                <button class="buy-button whatsapp" onclick="window.location.href='https://wa.me/3178414470'">Comprar por WhatsApp</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Contáctanos para más información</p>
+    </footer>
+</body>
+</html>
