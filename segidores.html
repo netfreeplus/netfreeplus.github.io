@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venta de Seguidores</title>
+  <style>
+    /* Estilos CSS */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      color: #333;
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 32px;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    }
+    .sales-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .product {
+      border-radius: 20px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      width: calc(33.33% - 20px);
+      text-align: center;
+      transition: transform 0.3s ease;
+      background-color: #fff;
+      position: relative;
+      overflow: hidden;
+    }
+    .product:hover {
+      transform: translateY(-5px);
+    }
+    .product h2 {
+      margin-top: 0;
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #000;
+    }
+    .product p {
+      margin-bottom: 15px;
+      color: #333;
+    }
+    .product .price {
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #000;
+    }
+    .buy-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      color: #fff;
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: background-color 0.3s;
+      background-color: #007bff;
+    }
+    .buy-btn:hover {
+      background-color: #0056b3;
+    }
+    /* Colores y temática para cada producto */
+    .product.tiktok {
+      background-color: #ff385c; /* Color de TikTok */
+    }
+    .product.instagram {
+      background-color: #405de6; /* Color de Instagram */
+    }
+    .product.facebook {
+      background-color: #3b5998; /* Color de Facebook */
+    }
+    .product.tiktok h2 {
+      color: #fff;
+    }
+    .product.instagram h2 {
+      color: #fff;
+    }
+    .product.facebook h2 {
+      color: #fff;
+    }
+    .product:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      filter: brightness(0.5);
+      transition: transform 0.3s ease;
+      z-index: -1;
+    }
+    .product.tiktok:before {
+      background-image: linear-gradient(to bottom right, #ff385c, #ff5e78);
+    }
+    .product.instagram:before {
+      background-image: linear-gradient(to bottom right, #405de6, #7189da);
+    }
+    .product.facebook:before {
+      background-image: linear-gradient(to bottom right, #3b5998, #4a69b8);
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 10px;
+      }
+      h1 {
+        font-size: 28px;
+      }
+      .product {
+        width: calc(50% - 20px);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Venta de Seguidores</h1>
+  
+  <div class="sales-container">
+    <!-- Venta de Seguidores de TikTok -->
+    <div class="product tiktok">
+      <h2>Seguidores para TikTok</h2>
+      <p>¡Aumenta tu popularidad en TikTok con seguidores reales y activos!</p>
+      <p class="price">500 seguidores: $20.000</p>
+      <p class="price">1000 seguidores: $30.000</p>
+      <a href="https://wa.me/+573178414470" class="buy-btn">Comprar en WhatsApp</a>
+      <a href="https://t.me/NETCOLVIP" class="buy-btn">Comprar en Telegram</a>
+    </div>
+    
+    <!-- Venta de Seguidores de Instagram -->
+    <div class="product instagram">
+      <h2>Seguidores para Instagram</h2>
+      <p>Consigue seguidores de alta calidad para tu cuenta de Instagram.</p>
+      <p class="price">500 seguidores: $20.000</p>
+      <p class="price">1000 seguidores: $30.000</p>
+      <a href="https://wa.me/+573178414470" class="buy-btn">Comprar en WhatsApp</a>
+      <a href="https://t.me/NETCOLVIP" class="buy-btn">Comprar en Telegram</a>
+    </div>
+    
+    <!-- Venta de Seguidores de Facebook -->
+    <div class="product facebook">
+      <h2>Seguidores para Facebook</h2>
+      <p>Mejora tu presencia en Facebook con seguidores genuinos y activos.</p>
+      <p class="price">500 seguidores: $20.000</p>
+      <p class="price">1000 seguidores: $30.000</p>
+      <a href="https://wa.me/+573178414470" class="buy-btn">Comprar en WhatsApp</a>
+      <a href="https://t.me/NETCOLVIP" class="buy-btn">Comprar en Telegram</a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
