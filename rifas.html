@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>👑Rifas🏆</title>
+    <style>
+        /* Estilos CSS */
+        body {
+            font-family: 'Arial Rounded MT Bold', sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #FF4500; /* Naranja */
+            font-size: 36px;
+            margin-top: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        p {
+            color: #333;
+            font-size: 20px;
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        #raffleNumbers {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .numberBox {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            border: 2px solid #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+        .highlight {
+            color: #FF4500; /* Naranja */
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Rifas - Netcol</h1>
+<p><span class="highlight">Fecha del sorteo:</span> 12 de abril de 2024</p>
+<p><span class="highlight">Tipo de lotería:</span> Últimas 2 cifras de la lotería de Medellín.</p>
+<p><span class="highlight">Premio:</span> 20.000 pesos en efectivo, una pantalla de Netflix y un regalo sorpresa.</p>
+<p><span class="highlight">Valor:</span> 2.000 pesos.</p>
+
+<div id="raffleNumbers">
+    <!-- Aquí se generarán dinámicamente los recuadros con números -->
+</div>
+
+<script>
+    //  para generar los números de la rifa dinámicamente
+const compradores = {
+};
+
+for (let i = 1; i <= 99; i++) {
+    const numberBox = document.createElement('div');
+    numberBox.classList.add('numberBox');
+    numberBox.dataset.number = i;
+
+    if (compradores[i]) {
+        numberBox.style.backgroundColor = 'red';
+        numberBox.textContent = i.toString().padStart(2, '0');
+        numberBox.addEventListener('click', () => {
+            alert(`Este número ya ha sido comprado por ${compradores[i]}. Te invitamos a ver los otros números disponibles.`);
+            // Aquí podrías redirigir al usuario a la sección de números disponibles si así lo deseas
+        });
+    } else {
+        numberBox.style.backgroundColor = 'green';
+        numberBox.textContent = i.toString().padStart(2, '0');
+        numberBox.addEventListener('click', () => {
+            const confirmBuy = confirm(`Bienvenido, ¿deseas comprar el número ${i}?`);
+            if (confirmBuy) {
+                window.location.href = `https://wa.me/573118414470?text=Hola,%20me%20gustaría%20comprar%20el%20número%20${i}`;
+            }
+        });
+    }
+    document.getElementById('raffleNumbers').appendChild(numberBox);
+}
+</script>
+
+</body>
+</html>
