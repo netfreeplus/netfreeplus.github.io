@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="es">
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>INTERNET ILIMITADO 2024</title> 
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> 
+  <style>
+        /* Estilo para ajustar el tamaño de las imágenes */
+        .catalogo-img {
+            width: 200px;
+            height: 200px;
+        }
+    </style> 
+ </head> 
+ <body class="bg-gray-100"> 
+  <!-- Navbar --> 
+  <nav class="bg-blue-500 text-white p-4"> 
+   <div class="container mx-auto flex justify-between items-center"> 
+    <span class="text-xl font-semibold">NetDroid Store</span> 
+    <ul class="flex space-x-4"> 
+     <li><a href="#services">Servicios</a></li> 
+     <li><a href="#faq">Preguntas</a></li> 
+     <li><a href="#contact">Contacto</a></li> 
+    </ul> 
+   </div> 
+  </nav> 
+  <!-- Hero Section --> 
+  <section class="py-12"> 
+   <div class="container mx-auto text-center"> 
+    <h1 class="text-4xl font-bold mb-4">¡Conéctate con NetDroid!</h1> 
+    <p class="text-lg">Descubre nuestros servicios de internet de alta velocidad.</p> 
+   </div> 
+  </section> 
+  <!-- Services Section --> 
+  <section id="services" class="py-12 bg-white"> 
+   <div class="container mx-auto"> 
+    <h2 class="text-2xl font-bold mb-8">Nuestros Servicios</h2> 
+    <!-- Service Card --> 
+    <div class="flex flex-wrap -mx-4"> 
+     <!-- Catálogo 1: PAQUETE DE WOM 12.000 --> 
+     <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-8"> 
+      <!-- Ajuste del ancho de las columnas --> 
+      <div class="bg-gray-100 p-6 rounded-lg shadow-md"> 
+       <img src="womvps.png" alt="Paquete de WOM 12.000" class="mb-4 catalogo-img"> 
+       <h3 class="text-xl font-semibold mb-2">Paquete de WOM 12.000</h3> 
+       <p class="mb-4">Adquiere ya un paquete a mitad de precio con apps ilimitadas.</p> 
+       <div class="flex justify-between mt-4"> 
+        <a href="https://wa.me/+573007273755" target="_blank" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Comprar</a> 
+        <button class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-gray-600" onclick="mostrarDescripcion('wom')">Ver Detalles</button> 
+       </div> 
+      </div> 
+     </div> 
+     <!-- Catálogo 2: Claro redes Twitter --> 
+     <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-8"> 
+      <!-- Ajuste del ancho de las columnas --> 
+      <div class="bg-gray-100 p-6 rounded-lg shadow-md"> 
+       <img src="claro.png" alt="Claro redes 10.000" class="mb-4 catalogo-img"> 
+       <h3 class="text-xl font-semibold mb-2">Servidor de Claro redes</h3> 
+       <p class="mb-4">para este servicio necesitas tener la red de Twitter ilimitada.</p> 
+       <div class="flex justify-between mt-4"> 
+        <a href="https://wa.me/+573007273755" target="_blank" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Comprar</a> 
+        <button class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-gray-600" onclick="mostrarDescripcion('claro')">Ver Detalles</button> 
+       </div> 
+      </div> 
+     </div> 
+     <!-- Catálogo 3: Movistar redes WhatsApp --> 
+     <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-8"> 
+      <!-- Ajuste del ancho de las columnas --> 
+      <div class="bg-gray-100 p-6 rounded-lg shadow-md"> 
+       <img src="movistar.png" alt="Movistar redes 10.000" class="mb-4 catalogo-img"> 
+       <h3 class="text-xl font-semibold mb-2">Servidor de Movistar redes</h3> 
+       <p class="mb-4">para este servicio necesitas tener la red de WhatsApp ilimitada.</p> 
+       <div class="flex justify-between mt-4"> 
+        <a href="https://wa.me/+573007273755" target="_blank" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Comprar</a> 
+        <button class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-gray-600" onclick="mostrarDescripcion('movistar')">Ver Detalles</button> 
+       </div> 
+      </div> 
+     </div> 
+     <!-- Catálogo 4: Tigo sin redes --> 
+     <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-8"> 
+      <!-- Ajuste del ancho de las columnas --> 
+      <div class="bg-gray-100 p-6 rounded-lg shadow-md"> 
+       <img src="tigo.png" alt="Tigo sin redes 10.000" class="mb-4 catalogo-img"> 
+       <h3 class="text-xl font-semibold mb-2">Tigo sin redes</h3> 
+       <p class="mb-4">para este proceso no necesita paquetes.</p> 
+       <div class="flex justify-between mt-4"> 
+        <a href="https://wa.me/+573007273755" target="_blank" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Comprar</a> 
+        <button class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-gray-600" onclick="mostrarDescripcion('tigo')">Ver Detalles</button> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </section> 
+  <!-- FAQ Section --> 
+  <section id="faq" class="py-12 bg-gray-200"> 
+   <div class="container mx-auto"> 
+    <h2 class="text-2xl font-bold mb-8">Preguntas Frecuentes</h2> 
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4"> 
+     <!-- FAQ Card --> 
+     <div class="bg-white p-6 rounded-lg shadow-md"> 
+      <h3 class="text-xl font-semibold mb-4">¿Es Ilimitado el internet?</h3> 
+      <p>ofrecemos internet ilimitado que te permite navegar, descargar y transmitir contenido sin preocuparte por límites de datos. Estos planes están diseñados para proporcionarte una experiencia sin interrupciones en línea. ¿Te gustaría saber más detalles sobre nuestros planes de internet ilimitado.</p> 
+     </div> 
+     <!-- Más preguntas aquí --> 
+    </div> 
+   </div> 
+  </section> 
+  <!-- Contact Section --> 
+  <section id="contact" class="py-12"> 
+   <div class="container mx-auto"> 
+    <h2 class="text-2xl font-bold mb-8">Contacto</h2> 
+    <p class="mb-4">¡Contáctanos para más información!</p> 
+    <div class="flex flex-col md:flex-row items-center md:justify-between"> 
+     <div class="mb-4 md:mb-0"> 
+      <p class="font-bold">Correo Electrónico:</p> 
+      <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e980878f86a9878c9d8d9b86808d80879d8c9b878c9dc78a8684">[email&nbsp;protected]</a></p> 
+     </div> 
+     <div> 
+     </div> 
+     <!-- WhatsApp Chat --> 
+     <a href="https://wa.me/+573007273755" target="_blank" class="fixed bottom-10 right-10 bg-green-500 text-white py-3 px-6 rounded-full shadow-md flex items-center justify-center"> 
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewbox="0 0 24 24" stroke="currentColor"> 
+       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6a6 6 0 110-12h12a6 6 0 110 12v-6a6 6 0 01-6-6z" /> 
+      </svg> <span>Chat de WhatsApp</span> </a> 
+    </div> 
+   </div>
+  </section> 
+  <!-- Modal para mostrar descripciones --> 
+  <div id="modal" class="fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 flex justify-center items-center hidden"> 
+   <div class="bg-white p-8 rounded-lg max-w-md"> 
+    <h2 class="text-2xl font-bold mb-4" id="modalTitle"></h2> 
+    <p id="modalContent"></p> 
+    <button id="modalCloseBtn" class="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Cerrar</button> 
+   </div> 
+  </div> 
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script>
+        // Función para mostrar descripciones de servicios
+function mostrarDescripcion(services) {
+    const modal = document.getElementById('modal');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalContent = document.getElementById('modalContent');
+    const modalCloseBtn = document.getElementById('modalCloseBtn');
+
+    // Actualizar título y contenido del modal según el servicio
+    if (services === 'wom') {
+        modalTitle.innerText = 'Paquete de WOM 12.000';
+        modalContent.innerText = 'Este paquete vale 22.000 en la app WOM, pero con nosotros lo encontrarás en 12.000. El paquete trae redes ilimitadas y minutos ilimitados.';
+    } else if (services === 'claro') {
+        modalTitle.innerText = 'Claro redes 10.000';                               
+        modalContent.innerText = 'Para este servicio necesitas tener la red de Twitter ilimitada.';
+    } else if (services === 'movistar') {
+        modalTitle.innerText = 'Servidor de Movistar redes';
+        modalContent.innerText = 'Para este servicio necesitas tener la red de WhatsApp ilimitada.';
+    } else if (services === 'tigo') {
+        modalTitle.innerText = 'Tigo sin redes';
+        modalContent.innerText = 'Para este proceso no necesitas paquetes. Necesitas instalar la aplicación VPN llamada Http Custom que esté en la Play Store. Luego de eso, te damos una prueba del servicio de internet.';
+    }
+    
+    // Mostrar el modal
+    modal.classList.remove('hidden');
+}
+
+       
+        // Función para cerrar el modal
+        function cerrarModal() {
+            const modal = document.getElementById('modal');
+            modal.classList.add('hidden');
+        }
+    
+        // Asignar evento click al botón de cerrar modal
+        const modalCloseBtn = document.getElementById('modalCloseBtn');
+        modalCloseBtn.addEventListener('click', cerrarModal);
+    </script>   
+ </body>
+</html>
