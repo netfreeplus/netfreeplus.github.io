@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Vuelos ClicAir!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .container {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0.5em 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+        p {
+            font-size: 1.2em;
+            animation: fadeIn 3s ease-in-out;
+        }
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            margin-top: 30px;
+            font-size: 1.2em;
+            color: #0072ff;
+            background: #fff;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: background 0.3s, transform 0.3s;
+            animation: bounce 2s infinite;
+        }
+        .button:hover {
+            background: #0072ff;
+            color: #fff;
+            transform: translateY(-10px);
+        }
+        .airplane {
+            display: block;
+            margin: 50px auto;
+            width: 100px;
+            animation: fly 5s linear infinite;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        @keyframes fly {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(100%); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>¡Aprovecha el 60% de Descuento en Vuelos Nacionales!</h1>
+        <p>Descubre Colombia con nuestras ofertas exclusivas. ¡Busca tu vuelo ahora y ahorra!</p>
+        <a href="https://clicair.co/" class="button">Busca tu Vuelo</a>
+        <p>Una ves que busques tu vuelo y sepas el valor final me hablas en el siguiente boton y te vendo el vuelo con ya el 60% de descuento aplicado!</p>
+        <a href="http://t.me/NETCOLVIP" class="button">Compra tu Vuelo</a>
+        <img src="https://cdn-icons-png.flaticon.com/512/2897/2897685.png" alt="Avión" class="airplane">
+    </div>
+</body>
+</html>
