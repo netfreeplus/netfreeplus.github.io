@@ -1,0 +1,77 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 1em;
+	text-align: center;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+nav li {
+	margin-right: 20px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.productos {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.producto {
+	background-color: #f7f7f7;
+	padding: 1em;
+	margin: 1em;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.producto img {
+	width: 100%;
+	height: 150px;
+	object-fit: cover;
+	border-radius: 10px 10px 0 0;
+}
+
+.producto h2 {
+	margin-top: 0;
+}
+
+.producto p {
+	margin-bottom: 1em;
+}
+
+.producto .precio {
+	font-weight: bold;
+	color: #333;
+}
+
+.producto .agregar-carrito {
+	background-color: #333;
+	color: #fff;
+	border: none;
+	padding: 1em 2em;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.producto .agregar-carrito:hover {
+	background-color: #444;
+}
